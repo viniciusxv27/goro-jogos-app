@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Goró Jogos">
+    <link rel="apple-touch-icon" href="assets/images/icone.ico">
+    <link rel="stylesheet" href="assets/styles/login.css">
+    <link rel="stylesheet" href="assets/styles/all.css">
+    <link rel="shortcut icon" href="assets/images/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <title>Login Goró</title>
+</head>
+<body>
+    <div class="form" id="loginForm">
+        <div>
+            <label for="email">Email</label>
+            <input autocomplete="email" name="email" id="email" type="email">
+        </div>
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+        </div>
+        <button onclick="logar()" id="loginButton">Entrar</button>
+        <button onclick="botaoCadastro()" id="cadastroButton">Cadastrar</button>
+        <p onclick="botaoRecuperar()" id="forgotPass">Esqueci minha senha</p>
+    </div>
+
+    <div class="recoveryForm" id="recoveryForm">
+        <header><i onclick="voltar()" class="bi bi-arrow-left"></i></header>
+        <h1>Recuperar Senha</h1>
+        <br>
+        <div>
+            <label for="recuperarEmail">Email</label>
+            <input name="recuperarEmail" id="recuperarEmail" type="email" placeholder="Digite o email cadastrado..." autocomplete="email">
+        </div>
+        <button onclick="recuperar()">Recuperar</button>
+        <br>
+        <p id="recoveryText">Caso você já tenha uma conta cadastrada, enviamos uma nova senha para o seu e-mail.</p>
+
+    </div>
+
+    <div class="registerForm" id="registerForm">
+        <header><i onclick="voltar()" class="bi bi-arrow-left"></i></header>
+        <h1>Criar Conta</h1>
+        <br>
+        <div>
+            <label for="registerNome">Nome</label>
+            <input name="registerNome" id="registerNome" type="text" placeholder="Seu nome..." autocomplete="name">
+        </div>
+        <div>
+            <label for="registerEmail">Email</label>
+            <input name="registerEmail" id="registerEmail" type="email" placeholder="Digite seu melhor e-mail..." autocomplete="email">
+        </div>
+        <div>
+            <label for="registerUser">Usuário</label>
+            <input name="registerUser" id="registerUser" type="text" placeholder="Insira seu usuário..." autocomplete="nickname">
+
+        </div>
+        <div>
+            <label for="registerPassword">Senha</label>
+            <input name="registerPassword" id="registerPassword" type="password" placeholder="Insira sua senha..." autocomplete="new-password">
+
+        </div>
+        <div>
+            <label for="confirmarNovaSenha">Confirmar Senha</label>
+            <input name="confirmarNovaSenha" id="confirmarNovaSenha" type="password" placeholder="Insira sua senha..." autocomplete="new-password">
+        </div>
+        <button onclick="cadastrar()" >Cadastrar</button>
+    </div>
+    <script src="assets/javascript/login.js"></script>
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '258094834014149');
+        fbq('track', 'PageView');
+        fbq('track', 'Lead');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=258094834014149&ev=PageView&noscript=1"
+    /></noscript>
+</body>
+</html>

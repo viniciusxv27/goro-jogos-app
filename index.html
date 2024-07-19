@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Goró Jogos">
+    <link rel="apple-touch-icon" href="assets/images/icone.ico">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/all.css">
+    <link rel="shortcut icon" href="assets/images/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Goró Jogos</title>
+</head>
+<body>
+    <div class="__header">
+        <img onclick="logout()" id="logoutButton" src="assets/images/Prancheta 38.png">
+        <h1>JOGOS</h1>
+        <img onclick="allGames()" id="unlockAllGamesButton" src="assets/images/Prancheta 39.png">
+    </div>
+    <p class="desc">Os jogos mais vergonhosos da internet agora na palma da sua mão.</p>
+
+    <div class="__games" id="__games">
+    </div>
+    <div id="divDetalhe">
+        <img src="assets/images/fundoCarta.png" id="detalheGame">
+        <i id="x-close" class="bi bi-x-lg"></i>
+        <button id="gameButton">JOGAR</button>
+    </div>
+    <div class="rodape">
+        <p>GORÓ JOGOS - Todos os direitos reservados. CNPJ: 42.975.867/0001-02</p>
+    </div>
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+    background-size: 100%;
+}
+
+.__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.__header img{
+    width: 25vh;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.__header img:hover{
+    opacity: 80%;
+}
+
+h1{
+    font-family: 'Goro Fonte';
+    color: #000;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.desc{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Goro Poppin';
+}
+
+.__games{
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: .1fr .1fr;
+    place-items: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.gameDiv{
+    cursor: pointer;
+    transition: all 300ms;
+    width: 170px;
+    height: 117px;
+    margin: 10px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.gameDiv:hover{
+    opacity: 75%;
+}
+
+.gameDiv p{
+    color: #fff;
+    font-family: 'Goro Poppin';
+    background-color: #00000049;
+    padding: 1px;
+    margin: 5px;
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    white-space: nowrap;
+    font-size: .7em;
+    align-items: center;
+    justify-content: center;
+}
+
+#divDetalhe{
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #0000009d;
+}
+
+#detalheGame{
+    width: 50vh;
+}
+
+#gameButton{
+    background-color: #fff;
+    color: rgb(255, 145, 0);
+    border: 0;
+    font-size: 100%;
+    font-family: 'Goro Poppin';
+    font-weight: 800;
+    border-radius: 30px;
+    padding: 15px;
+    width: 40vh;
+    position: absolute;
+    margin-top: 530px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+#gameButton:hover{
+    opacity: 80%;
+}
+
+#x-close{
+    color: rgb(255, 145, 0);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 100%;
+    border: 0;
+    cursor: pointer;
+    transition: all 300ms;
+    position: absolute;
+    margin-bottom: 520px;
+    margin-left: 320px;
+}
+
+#x-close:hover{
+    opacity: 80%;
+}
+
+.bi-lock{
+    padding: 6px;
+    background-color: #fff;
+    color: rgb(255, 145, 0);
+    border-radius: 50%;
+    transform: translateX(12px);
+    height:12px;
+    width: 12px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Goro Poppin';
+}
+
+.rodape p{
+    width: 80%;
+    font-size: 90%;
+}
+
+@media (max-width:450px){
+    #divDetalhe{
+        width: 100%;
+    }
+
+    #detalheGame{
+        width: 90%;
+    }
+
+    #gameButton{
+        width: 50%;
+        margin-top: 110%;
+        padding: 10px;
+    }
+
+    #x-close{
+        margin-bottom: 100%;
+        margin-left: 70%;
+    }
+
+    .__header img{
+        width: 20%;
+    }
+    
+    .__header {
+        justify-content: space-around;
+    }
+    
+}
